@@ -1,0 +1,182 @@
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+footer {
+  text-align: right;
+  padding: 5px;
+  padding-right: 40px;
+  background: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0%;
+}
+
+h1 {
+  font-size: 40px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+hr.new1 {
+  border: 2px solid grey;
+  border-radius: 2px;
+  margin-top: -5px;
+  margin-bottom: 50px;
+}
+
+.btn_add {
+  background-color: rgb(18, 153, 22);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 20pt;
+  margin-top: -10pt;
+  margin-left: 55pt;
+  width: 150pt;
+}
+
+.btn_add:hover {
+  background-color: rgb(110, 221, 69);
+}
+
+.btn_update {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 3px;
+  margin: 3%;
+}
+
+/* Darker background on mouse-over */
+.btn_update:hover {
+  background-color: RoyalBlue;
+}
+
+.btn_delete {
+  background-color: rgb(255, 49, 30); /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 3px;
+}
+
+/* Darker background on mouse-over */
+.btn_delete:hover {
+  background-color: rgb(221, 69, 69);
+}
+
+table,
+tr,
+td.tbl_utama {
+  border: 3px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  width: 1000pt;
+  text-align: center;
+  margin-left: 55pt;
+  position: relative;
+}
+.popup {
+  width: 400px;
+  background: #dad6d6;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, center 0.4s;
+}
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+}
+.popup h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}

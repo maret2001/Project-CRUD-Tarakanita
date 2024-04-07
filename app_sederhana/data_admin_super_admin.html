@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style_admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images\icon tarakanita.png" />
+    <title>Data Pelamar | Yayasan Tarakanita</title>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="data_pelamar_super_admin.html">Data Pelamar</a>
+      <a href="data_admin_super_admin.html">Data Admin</a>
+      <a href="#" onclick="openPopup()">Logout</a>
+    </div>
+    <div id="main">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776;
+      </span>
+      <h1>Assign Roles Admin Tarakanita</h1>
+      <hr class="new1" />
+      <button class="btn_add"><i class="fa fa-plus"></i> Tambah</button>
+      <table class="tbl_utama">
+        <tr style="background-color: rgb(218, 234, 169)">
+          <th>No.</th>
+          <th>Nama Pelamar</th>
+          <th>Kampus Asal</th>
+          <th>IPK</th>
+          <th>Catatan Portofolio</th>
+          <th>Aksi</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Ignasius Maret Ismoyo</td>
+          <td>Universitas Budi Luhur</td>
+          <td>3.70</td>
+          <td>
+            <a href="#"><button>Lihat Disini</button></a>
+          </td>
+          <td>
+            <button class="btn_update">
+              <i class="fa fa-refresh"></i> Update
+            </button>
+            <button class="btn_delete">
+              <i class="fa fa-trash"></i> Hapus
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Irene Novianty</td>
+          <td>Universitas Budi Luhur</td>
+          <td>3.74</td>
+          <td>
+            <a href="#"><button>Lihat Disini</button></a>
+          </td>
+          <td>
+            <button class="btn_update">
+              <i class="fa fa-refresh"></i> Update
+            </button>
+            <button class="btn_delete">
+              <i class="fa fa-trash"></i> Hapus
+            </button>
+          </td>
+        </tr>
+      </table>
+      <div class="container">
+        <div class="popup" id="popup">
+          <img src="images\check.png" />
+          <h2>Terima Kasih!</h2>
+          <p>Anda Boleh Logout sekarang!</p>
+          <a href="Home.html"
+            ><button type="submit" onclick="closePopup()">Logout</button></a
+          >
+        </div>
+      </div>
+      <footer>
+        <p class="copyright">
+          &copy; 2024 Ignasius Maret Ismoyo. All Rights Reserved
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+  </script>
+</html>
